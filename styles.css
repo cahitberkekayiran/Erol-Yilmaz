@@ -1,4 +1,3 @@
-/* GENEL STİLLER */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
@@ -33,7 +31,6 @@ body {
   font-weight: 700;
 }
 
-/* DESKTOP MENÜ */
 .nav-menu {
   display: flex;
   gap: 2rem;
@@ -53,7 +50,6 @@ body {
   color: #fff;
 }
 
-/* HAMBURGER */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -68,7 +64,6 @@ body {
   border-radius: 2px;
 }
 
-/* MOBİL MENÜ */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -95,7 +90,6 @@ body {
   color: #ffd600;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
@@ -104,8 +98,6 @@ body {
     display: flex;
   }
 }
-
-/* HERO vs diğer bölümler eski haliyle kullanılabilir */
 
 .hero {
   min-height: 100vh;

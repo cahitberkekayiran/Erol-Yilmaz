@@ -1,4 +1,3 @@
-// Mobil hamburger menü açma / kapama
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
 
@@ -7,14 +6,12 @@ hamburger.addEventListener("click", () => {
   mobileMenu.style.right = isOpen ? "-100%" : "0%";
 });
 
-// Menü bağlantıları tıklanınca mobil menüyü kapat
 document.querySelectorAll(".mobile-menu a").forEach((link) => {
   link.addEventListener("click", () => {
     mobileMenu.style.right = "-100%";
   });
 });
 
-// Yumuşak kaydırma
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -28,7 +25,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Sayfa içi animasyonlar (scroll ile)
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -83,7 +79,6 @@ window.addEventListener("load", () => {
   document.body.style.opacity = "1";
 });
 
-// Sayı animasyonu (istatistikler)
 function animateCounter(element, target, duration = 2000) {
   let start = 0;
   const increment = target / (duration / 16);
@@ -120,7 +115,6 @@ if (statsSection) {
   statsObserver.observe(statsSection);
 }
 
-// Scroll ile navbar arkaplan değişimi
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
   if (window.scrollY > 50) {
